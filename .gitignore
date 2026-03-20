@@ -1,10 +1,5 @@
-Manifest.toml
-.DS_Store
-build.log
-.ipynb_checkpoints
-*.cov
-*.ipynb
-.vscode
-docs/build
-docs/src/examples/*.md
-index.md
+.ds_store
+/Manifest.toml
+/docs/Manifest.toml
+/test/Manifest.toml
+.vscode/
