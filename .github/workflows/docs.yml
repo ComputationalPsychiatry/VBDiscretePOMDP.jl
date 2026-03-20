@@ -30,6 +30,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using RegressionDynamicCausalModeling
-            DocMeta.setdocmeta!(VBDiscretePOMDP, :DocTestSetup, :(using RegressionDynamicCausalModeling); recursive=true)
+            using VBDiscretePOMDP
+            DocMeta.setdocmeta!(VBDiscretePOMDP, :DocTestSetup, :(using VBDiscretePOMDP); recursive=true)
             doctest(VBDiscretePOMDP)'
