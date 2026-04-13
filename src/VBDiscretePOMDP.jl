@@ -1,2 +1,1 @@
-module VBDiscretePOMDP
-end
+module VBDiscretePOMDP end

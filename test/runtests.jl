@@ -6,20 +6,18 @@ using JuliaFormatter: JuliaFormatter
 
 @testset verbose = true "VBDiscretePOMDP tests" begin
     @testset "Code formatting" begin
-        @test JuliaFormatter.format(
-            VBDiscretePOMDP; verbose=false, overwrite=false
-        )
+        @test JuliaFormatter.format(VBDiscretePOMDP; verbose = false, overwrite = false)
     end
 
     @testset "Code linting" begin
-        JET.test_package(VBDiscretePOMDP; target_defined_modules=true)
+        JET.test_package(VBDiscretePOMDP; target_defined_modules = true)
     end
 
     @testset "Code quality" begin
         Aqua.test_all(
             VBDiscretePOMDP;
-            ambiguities=false,
-            deps_compat=(check_extras=false,),
+            ambiguities = false,
+            deps_compat = (check_extras = false,),
         )
     end
 
