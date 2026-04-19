@@ -12,6 +12,15 @@ ActiveInference = "688b0e7a-0122-4325-8669-5ff08899a59e"
 [extensions]
 ActiveInferenceExt = "ActiveInference"
 
+[compat]
+ActiveInference = "0.1"
+Aqua = "0.8"
+JET = "0.8, 0.11"
+JuliaFormatter = "1.0"
+LinearAlgebra = "1.0"
+Test = "1.0"
+julia = "1.10"
+
 [extras]
 Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
 JET = "c3a54625-cd67-489e-a8e7-0a5a0ff4e31b"
@@ -20,12 +29,3 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
 test = ["Aqua", "JET", "JuliaFormatter", "Test"]
-
-[compat]
-julia = "1.10"
-LinearAlgebra = "1.0"
-ActiveInference = "0.1"
-Aqua = "0.8"
-JET = "0.8"
-JuliaFormatter = "1.0"
-Test = "1.0"
