@@ -6,7 +6,7 @@ using JuliaFormatter: JuliaFormatter
 
 @testset verbose = true "VBDiscretePOMDP tests" begin
     @testset "Code formatting" begin
-        @test JuliaFormatter.format(VBDiscretePOMDP; verbose = false, overwrite = false)
+        @test JuliaFormatter.format(VBDiscretePOMDP; verbose = true, overwrite = false)
     end
 
     @testset "Code linting" begin
